@@ -1,6 +1,6 @@
 # JavaScript Action Template
 
-This repository serves as a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for JavaScript [Actions](https://docs.github.com/en/actions).
+This repository serves as a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for JavaScript [Actions](https://docs.github.com/en/actions). For TypeScript see [austenstone/action-typescript](https://github.com/austenstone/action-typescript).
 
 ## Development
 
