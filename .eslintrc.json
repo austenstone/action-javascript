@@ -1,16 +1,15 @@
 {
     "env": {
-        "node": true
+        "browser": true,
+        "es2021": true
     },
-    "extends": ["eslint:recommended", "google"],
-    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "google"
+    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
         "object-curly-spacing": ["error", "always"],
         "max-len": ["error", {
@@ -21,6 +20,5 @@
             "ignoreTemplateLiterals": true
         }],
         "linebreak-style": 0
-    },
-    "ignorePatterns": ["dist/**", "jest.config.js", "**/node_modules/**"]
+    }
 }

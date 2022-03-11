@@ -8,7 +8,7 @@
     "start": "node index.mjs",
     "build": "ncc build src/index.mjs -m",
     "test": "jest",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint src/**/*.mjs",
     "dev": "nodemon src/index.mjs"
   },
   "keywords": [
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.33.1",
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "eslint-config-google": "^0.14.0",
     "jest": "^27.5.1",
     "ncc": "^0.3.6",
