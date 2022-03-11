@@ -2,12 +2,14 @@
   "name": "action-typescript",
   "version": "1.1.0",
   "description": "GitHub Actions TypeScript template",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/index.mjs",
   "scripts": {
-    "build": "ncc build src/index.ts",
+    "start": "node index.mjs",
+    "build": "ncc build src/index.mjs -m",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
-    "dev": "ts-node-dev --respawn src/index.ts"
+    "dev": "nodemon src/index.mjs"
   },
   "keywords": [
     "actions",
@@ -29,16 +31,11 @@
     "@actions/github": "^5.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.0",
-    "@types/node": "^16.11.26",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
     "@vercel/ncc": "^0.33.1",
     "eslint": "^8.10.0",
     "eslint-config-google": "^0.14.0",
-    "jest": "^27.4.7",
-    "ts-jest": "^27.0.7",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.5.4"
+    "jest": "^27.5.1",
+    "ncc": "^0.3.6",
+    "nodemon": "^2.0.15"
   }
 }

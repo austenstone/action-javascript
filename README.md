@@ -1,4 +1,4 @@
-# TypeScript Action Template
+# JavaScript Action Template
 
 This repository serves as a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for TypeScript [Actions](https://docs.github.com/en/actions).
 
@@ -8,7 +8,7 @@ Run `npm run dev` for a hot-reload dev environment.
 
 ## Build
 
-Run `npm run build` to build the project with `ncc`. The build artifacts will be stored in a single file `dist/index.js`.
+Run `npm run build` to build the project with `ncc`. The build artifacts will be stored in a single file `index.mjs`.
 
 ## Running unit tests
 
