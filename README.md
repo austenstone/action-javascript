@@ -1,27 +1,36 @@
 # JavaScript Action Template
 
-This repository serves as a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for JavaScript [Actions](https://docs.github.com/en/actions). For TypeScript see [austenstone/action-typescript](https://github.com/austenstone/action-typescript).
+This repository serves as a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for JavaScript [Actions](https://docs.github.com/en/actions).
+<br>For TypeScript see [austenstone/action-typescript](https://github.com/austenstone/action-typescript).
 
-## Development
+## 🧑‍💻 Development
+Use [ts-node-dev](https://github.com/wclr/ts-node-dev) for a hot-reload dev environment.
+```
+npm run dev
+```
 
-Run `npm run dev` for a hot-reload dev environment.
+## 🔨 Build
+Build the project with [ncc](https://github.com/vercel/ncc).<br>The build artifacts will be stored in a single file `dist/index.js`.
+```
+npm run build
+```
 
-## Build
+## 🧪 Test
+Test the project with  [jest](https://github.com/facebook/jest).
+```
+npm test
+```
 
-Run `npm run build` to build the project with `ncc`. The build artifacts will be stored in a single file `index.mjs`.
+## 🧹 Lint
+Linting is done with [eslint](https://github.com/eslint/eslint).
+```
+npm run lint
+```
 
-## Running unit tests
+## 🏃 Usage
+[Create a workflow](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file) (eg: [`.github/workflows/run.yml`](.github/workflows/usage.yaml))
 
-Run `npm test` to execute the unit tests via [Jest](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Actions see [documentation](https://docs.github.com/en/actions).
-
-## Usage
-Create a workflow (eg: `.github/workflows/run.yml`). See [Creating a Workflow file](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file).
-
-#### Default Workflow
+### Default Workflow
 ```yml
 name: "Add to Project"
 on:
@@ -34,9 +43,12 @@ jobs:
       - uses: austenstone/action-javascript@main
 ```
 
-## Input Settings
+## ➡️ Input Settings
 Various inputs are defined in [`action.yml`](action.yml):
 
 | Name | Description | Default |
 | --- | - | - |
 | github&#x2011;token | Token to use to authorize. | ${{&nbsp;github.token&nbsp;}} |
+
+## Further help
+To get more help on the Actions see [documentation](https://docs.github.com/en/actions).
