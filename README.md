@@ -4,19 +4,19 @@ This repository serves as a [template](https://docs.github.com/en/repositories/c
 <br>For TypeScript see [austenstone/action-typescript](https://github.com/austenstone/action-typescript).
 
 ## 🧑‍💻 Development
-Use [ts-node-dev](https://github.com/wclr/ts-node-dev) for a hot-reload dev environment.
+Use [nodemon](https://github.com/remy/nodemon) for a hot-reload dev environment.
 ```
 npm run dev
 ```
 
 ## 🔨 Build
-Build the project with [ncc](https://github.com/vercel/ncc).<br>The build artifacts will be stored in a single file `dist/index.js`.
+Build the project with [ncc](https://github.com/vercel/ncc).<br>The build artifacts will be stored in a single file `dist/index.mjs`.
 ```
 npm run build
 ```
 
 ## 🧪 Test
-Test the project with  [jest](https://github.com/facebook/jest).
+Test the project with [jest](https://github.com/facebook/jest).
 ```
 npm test
 ```
