@@ -4,7 +4,6 @@ import * as github from '@actions/github';
 const run = async () => {
   try {
     const token = core.getInput('github-token');
-    if (!token) throw new Error(`No input 'github-token'`);
     const octokit = github.getOctokit(token);
 
     const {
@@ -15,9 +14,9 @@ const run = async () => {
         }
     }`);
 
-    core.info(`Hello, ${login}`);
+    core.info(`Hello, ${login}!`);
   } catch (error) {
-    core.setFailed(error.message);
+    core.setFailed(error instanceof Error ? error.message : JSON.stringify(error));
   }
 };
 
