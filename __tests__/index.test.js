@@ -14,7 +14,7 @@ test('test run', () => {
   Object.entries(input).forEach(([key, value]) => addInput(key, value));
   process.env['GITHUB_REPOSITORY'] = `austenstone/${path.basename(process.cwd())}`;
   const np = process.execPath;
-  const ip = path.join(__dirname, '..', 'src', 'index.js');
+  const ip = path.join(__dirname, '..', 'dist', 'index.js');
   const options = {
     env: process.env,
   };
