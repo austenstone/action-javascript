@@ -10,7 +10,7 @@ npm run dev
 ```
 
 ## 🔨 Build
-Build the project with [ncc](https://github.com/vercel/ncc).<br>The build artifacts will be stored in a single file `dist/index.mjs`.
+Build the project with [ncc](https://github.com/vercel/ncc).<br>The build artifacts will be stored in a single file `dist/index.js`.
 ```
 npm run build
 ```
